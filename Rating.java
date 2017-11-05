@@ -16,6 +16,7 @@ public class Rating {
      */
     public static void main(String[] args) {
         System.out.println(Rate.rate(-10));
+        System.out.println(Rate.rate(11));
     }
     
 }
