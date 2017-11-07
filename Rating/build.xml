@@ -9,7 +9,7 @@
 <!-- in the project's Project Properties dialog box.-->
 <project name="Rating" default="main" basedir=".">
     <description>Builds, tests, and runs the project Rating.</description>
-    <import file="nbproject/build-impl.xml"/>
+<!--     <import file="nbproject/build-impl.xml"/> -->
     <target name="info">
         <echo>Hello World - Welcome to Jenkins</echo>
     </target>
