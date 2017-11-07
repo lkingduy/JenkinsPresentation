@@ -7,10 +7,19 @@
 <!-- the Compile on Save feature is turned off for the project. -->
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
-<project name="Rating" default="default" basedir=".">
+<project name="Rating" default="main" basedir=".">
     <description>Builds, tests, and runs the project Rating.</description>
-    <import file="nbproject/build-impl.xml"/> 
-   <target name="default">
+    <import file="nbproject/build-impl.xml"/>
+    <target name="info">
         <echo>Hello World - Welcome to Jenkins</echo>
+    </target>
+    <target name="main" depends="compile, compress">
+        <echo>Building the .jar file</echo>
+    </target>
+    <target name="compile">
+        <javac srcdir="."/>
+    </target>
+    <target name="compress">
+        <jar jarfile="Rating.jar" basedir="." includes="*.class"/>
     </target>
 </project>
