@@ -10,7 +10,7 @@
 <project name="Rating" default="default" basedir=".">
     <description>Builds, tests, and runs the project Rating.</description>
     <import file="nbproject/build-impl.xml"/>
-   <target name="info">
+   <target name="default">
         <echo>Hello World - Welcome to Jenkins</echo>
     </target>
 </project>
